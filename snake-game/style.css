@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color:  aliceblue;
+    text-align: center;
+}
+h2{
+    /* text-align: center; */
+    color: darkgreen;
+    
+}
+#msg{
+   /* text-align: center; */
+   font-size: 1em;
+}
+#gameBoard{
+    border: 3px solid;
+}
+#score{
+    font-size: 2em;
+}
+/* Media queries for responsive layout */
+/* @media (min-width:320px) and (max-width:600px){ */
+    @media (min-width: 768px) and (max-width: 1023px) {
+    .box {
+        width: 500%;
+        height: 100%;
+        float: left;
+        margin-right: 2%;
+    }
+    .box:last-child {
+        margin-right: 0;
+    }
+    #gameBoard {
+        width: 70%; /* Adjust canvas width for larger screens */
+    }
+}
+@media only screen and (max-width:1024px)  {
+    /* Target devices with a minimum width of 1024px (e.g., desktops) */
+
+    h2 {
+        font-size: 2em; /* Adjust font size for larger screens */
+    }
+
+    #msg {
+        font-size: 1.2em; /* Adjust font size for larger screens */
+    }
+
+    #gameBoard {
+        width: 90%; /* Adjust canvas width for larger screens */
+        height: 90%;
+    }
+}
